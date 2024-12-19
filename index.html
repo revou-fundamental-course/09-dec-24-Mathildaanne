@@ -3,9 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Web Portofolio</title>
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    
+    <section class="main-page">
+        <header class="main-header">
+            <div class="home-icon">
+                <img src="assets/logo.jpeg" alt="logo">
+                <h2>Skybound</h2>
+            </div>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Our Packages</a>
+                <a href="#">Call Us</a>
+            </nav>
+        </header>
+
+        <hr />
+
+        <main>
+            <header class="content-header">
+                <h1>Explore the Wonders of<br>The World with SkyBound</h1>
+                <h3>Your Happiness is Our Happiness</h3>
+            </header>
+
+            <section>
+                <div class="first-container">
+                    <!-- Banner Autoslide Content -->
+                    <aside class="main-item">
+                        <div class="slider">
+                            <div class="slides" id="slides">
+                              <img src="assets/labuan-bajo.jpg" alt="Image 1">
+                              <img src="assets/swiss.jpg" alt="Image 2">
+                              <img src="assets/china.jpg" alt="Image 3">
+                              <img src="assets/edinburg.jpg" alt="Image 4">
+                            </div>
+                          </div>
+                    </aside>
+
+                    <!-- Form Contact Us -->
+                    <form class="main-item" onsubmit="return validateFrom()" name="message-form">
+                        <header>
+                            <h3>Contact Us</h3>
+                            <p>Sales akan menghubungi Anda setelah data Anda telah kami terima</p>
+                        </header>
+
+                        <label for="name">Your Name :</label><br>
+                        <input type="text" id="name" placeholder="First and Last Name" required>
+                        <span id="error_data"></span>
+                        <br>
+
+                        <label>Your Email :</label><br>
+                        <input type="email" id="email" placeholder="example.com" required>
+                        <br>
+
+                        <label for="country">What are your interested in?</label><br>
+                        <select id="country" required>
+                            <option value="norway">Norway</option>
+                            <option value="greece">Greece</option>
+                            <option value="indonesia">Indonesia</option>
+                            <option value="china">China</option>
+                            <option value="switzerland">Switzerland</option>
+                        </select>
+
+                        <button type="submit" onclick="validateForm()">Submit</button>
+                    </form>
+                </div>
+
+                <h2>Experience The New Adventure</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga illo voluptates adipisci inventore<br>
+                    deserunt alias quia asperiores incidunt perspiciatis! Aliquid soluta vel incidunt rem sint<br>
+                    possimus suscipit nam, debitis aspernatur?
+                </p>
+
+                <div class="benefit">
+                    <div class="sign"></div>
+                    <div>
+                        <h3>Safe Travelling</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae minima<br>
+                            doloribus soluta impedit, placeat voluptates quis possimus laboriosam odit
+                        </p>
+                    </div>
+                </div>
+                <div class="benefit">
+                    <div class="sign"></div>
+                    <div>
+                        <h3>Affordable Price</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae minima<br>
+                            doloribus soluta impedit, placeat voluptates quis possimus laboriosam odit
+                        </p>
+                    </div>
+                </div>
+                <div class="benefit">
+                    <div class="sign"></div>
+                    <div>
+                        <h3>Comfort Accommodation</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae minima<br>
+                            doloribus soluta impedit, placeat voluptates quis possimus laboriosam odit
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </section>
+
+    <main>
+        <!-- Our Packages Content -->
+        <div id="our-package-section">
+            <header class="content-header our-packages-header">
+                <h1>Our Packages</h1>
+            </header>
+            <section class="second-page">
+                <div class="card-container">
+                    <div name="col">
+                        <div class="card">
+                        <h3>Switzerland</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Switzerland</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Switzerland</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div name="col">
+                        <div class="card">
+                        <h3>Switzerland</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Switzerland</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Switzerland</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <h2>Discover Mesmerizing Nature Landscape & Stunning Culture</h2>
+        <span>Made by Mathilda</span>
+    </footer>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>
